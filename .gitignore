@@ -1,0 +1,57 @@
+# ---- Local assignment materials and credentials (never commit) ----
+readme.txt
+lecture04_columbia-statun3108.pdf
+lectures.zip
+
+# ---- Local planning notes (kept out of the public repo) ----
+.workbuddy/
+PLAN_REVISION_SPEC.md
+PROJECT_PLAN.md
+TOPIC_PROPOSAL.md
+local-notes/
+
+# ---- Local (non-public) deliverables and pipeline artifacts ----
+report/*
+!report/README.md
+output/
+
+# ---- Downloaded datasets and model caches (reproducible, too large) ----
+data/*
+!data/README.md
+!data/.gitkeep
+models/
+.cache/
+*.zip
+*.tar.gz
+*.safetensors
+*.bin
+*.key
+*.pem
+
+# ---- Derived artifacts (rebuild with code, not worth versioning) ----
+results/indexes/
+results/vectors/
+results/raw/
+results/*.pkl
+results/*.npy
+results/*.npz
+results/*.log
+
+# NOTE: results/*.csv and results/*.md are intentionally TRACKED.
+# Rubric criteria 5 (Quantitative Results) and the 10% repo grade both need the
+# result tables to appear in commit history. Only bulky/derived files are ignored.
+
+# ---- Python and local environments ----
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.env.*
+.pytest_cache/
+.streamlit/secrets.toml
+
+# ---- System files ----
+.DS_Store
+Thumbs.db
+desktop.ini
